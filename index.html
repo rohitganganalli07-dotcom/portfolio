@@ -1,90 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Rohit G | Content Writing Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Poppins,sans-serif;background:linear-gradient(135deg,#6a11cb,#2575fc,#00c9ff);background-size:300% 300%;animation:bg 12s ease infinite;color:#fff}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Poppins,sans-serif;background:linear-gradient(135deg,#6a11cb,#2575fc,#00c9ff);background-size:300% 300%;animation:bg 12s ease infinite;color:#fff}
 @keyframes bg{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}
-body:before,body:after{content:"";position:fixed;border-radius:50%;filter:blur(40px);opacity:.35;z-index:-1}
-body:before{width:260px;height:260px;background:#ff4ecd;top:60px;left:40px}
-body:after{width:300px;height:300px;background:#00ffd5;bottom:60px;right:40px}
-.hero{text-align:center;padding:90px 20px}
-.hero h1{font-size:64px;background:linear-gradient(90deg,#fff,#ffe082,#ff80ab);-webkit-background-clip:text;color:transparent}
-.hero p{margin:20px auto;max-width:700px;font-size:20px}
-.btn{display:inline-block;margin:10px;padding:14px 28px;border-radius:30px;text-decoration:none;background:#fff;color:#2575fc;font-weight:700;transition:.3s}
-.btn:hover{transform:scale(1.08);box-shadow:0 0 20px #fff}
-.container{max-width:1100px;margin:auto;padding:20px}
-.glass{background:rgba(255,255,255,.15);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.25);border-radius:22px;padding:30px;margin:30px 0;box-shadow:0 10px 30px rgba(0,0,0,.2)}
-h2{text-align:center;margin-bottom:20px}
-.skills{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
-.skill{padding:10px 18px;border-radius:30px;background:linear-gradient(45deg,#ff9800,#ff4081)}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
-.card{padding:25px;border-radius:20px;color:#fff;transition:.3s}
-.card:nth-child(1){background:linear-gradient(135deg,#ff6a00,#ee0979)}
-.card:nth-child(2){background:linear-gradient(135deg,#00c6ff,#0072ff)}
-.card:hover{transform:translateY(-10px) rotate(-1deg)}
-.card a{display:inline-block;margin-top:15px;padding:10px 18px;background:#fff;color:#111;text-decoration:none;border-radius:25px;font-weight:600}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;text-align:center}
-.stat{background:rgba(255,255,255,.15);padding:20px;border-radius:18px}
-footer{text-align:center;padding:30px}
-@media(max-width:700px){.hero h1{font-size:42px}.stats{grid-template-columns:1fr}}
-</style>
-</head>
-<body>
-<section class="hero">
-<h1>✍️ Rohit G</h1>
-<p>Creative Content Writer • SEO Enthusiast • Research-Driven Storytelling</p>
-<a href="#articles" class="btn">View Articles</a>
-</section>
-
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 8%;position:sticky;top:0;background:rgba(0,0,0,.15);backdrop-filter:blur(10px)}
+nav a{color:#fff;text-decoration:none;margin-left:18px;font-weight:600}
+.hero{text-align:center;padding:80px 20px}.hero h1{font-size:60px}.hero p{max-width:760px;margin:18px auto;font-size:20px}
+.btn{display:inline-block;background:#fff;color:#2575fc;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:700}
+.container{max-width:1100px;margin:auto;padding:20px}.glass{background:rgba(255,255,255,.15);backdrop-filter:blur(12px);border-radius:20px;padding:30px;margin:30px 0}
+.skills{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}.skill{background:#ff6a00;padding:10px 18px;border-radius:25px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:rgba(255,255,255,.12);padding:24px;border-radius:18px;transition:.3s}.card:hover{transform:translateY(-10px) scale(1.03)}
+.card a{display:inline-block;margin-top:12px;background:#fff;color:#222;padding:10px 18px;border-radius:25px;text-decoration:none}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}.stat{text-align:center;background:rgba(255,255,255,.15);padding:20px;border-radius:16px}
+footer{text-align:center;padding:25px}
+</style></head><body>
+<nav><h2>✍️ Rohit G</h2><div><a href="#about">About</a><a href="#articles">Articles</a><a href="#contact">Contact</a></div></nav>
+<section class="hero"><h1>Helping Brands Turn Ideas Into Engaging, SEO‑Driven Content.</h1><p>Creative Content Writer • SEO Enthusiast • Research-Driven Storytelling</p><a class="btn" href="#articles">View Articles</a></section>
 <div class="container">
-<div class="glass">
-<h2>👋 About Me</h2>
-<p>Hello! I'm Rohit, an aspiring content writer passionate about creating engaging, informative, and SEO-friendly articles. I enjoy turning complex ideas into simple, reader-focused content while continuously improving my writing and research skills.</p>
-</div>
-
-<div class="glass">
-<h2>🚀 Skills</h2>
-<div class="skills">
-<span class="skill">SEO Writing</span>
-<span class="skill">Research</span>
-<span class="skill">Blog Writing</span>
-<span class="skill">AI Tools</span>
-<span class="skill">Copywriting</span>
-<span class="skill">Editing</span>
-</div>
-</div>
-
-<div class="glass" id="articles">
-<h2>📚 Featured Articles</h2>
-<div class="cards">
-<div class="card">
-<h3>⛽ E20 Petrol: Impact on Everyday Life</h3>
-<p>Understand how E20 petrol affects mileage, maintenance, costs, and the future of mobility in India.</p>
-<a href="e20-petrol.html">Read Article →</a>
-</div>
-<div class="card">
-<h3>💼 Earning Opportunities in the New Era</h3>
-<p>Explore freelancing, AI, digital marketing, remote work, and modern online income opportunities.</p>
-<a href="earning-opportunities.html">Read Article →</a>
-</div>
-</div>
-</div>
-
-<div class="glass">
-<h2>📊 Portfolio Stats</h2>
-<div class="stats">
-<div class="stat"><h3>2+</h3><p>Articles</p></div>
-<div class="stat"><h3>3000+</h3><p>Words Written</p></div>
-<div class="stat"><h3>100%</h3><p>Original Work</p></div>
-</div>
-</div>
-
-<footer>© 2026 Rohit G • Content Writing Portfolio</footer>
-</div>
-</body>
-</html>
+<div class="glass" id="about"><h2>About Me</h2><p>Hello! I'm Rohit, an aspiring content writer passionate about creating engaging, informative, and SEO-friendly content that connects with readers and delivers value.</p></div>
+<div class="glass"><h2>Skills</h2><div class="skills"><span class="skill">SEO</span><span class="skill">Research</span><span class="skill">Blogs</span><span class="skill">AI Tools</span><span class="skill">Copywriting</span><span class="skill">Editing</span></div></div>
+<div class="glass" id="articles"><h2>Featured Articles</h2><div class="cards">
+<div class="card"><h3>⛽ E20 Petrol: Impact on Everyday Life</h3><p>Understand how E20 petrol affects mileage, maintenance and the future of mobility.</p><a href="e20-petrol.html">Read Article →</a></div>
+<div class="card"><h3>💰 Why Paid Internships Attract Better Talent</h3><p>Learn why competitive stipends are an investment that attracts better interns and builds a stronger employer brand.</p><a href="paid-internships.html">Read Article →</a></div>
+<div class="card"><h3>💼 Earning Opportunities in the New Era</h3><p>Explore freelancing, AI, digital marketing and remote work opportunities.</p><a href="earning-opportunities.html">Read Article →</a></div>
+</div></div>
+<div class="glass"><h2>Portfolio Stats</h2><div class="stats"><div class="stat"><h3>3+</h3><p>Published Articles</p></div><div class="stat"><h3>4000+</h3><p>Words Written</p></div><div class="stat"><h3>100%</h3><p>Original Work</p></div></div></div>
+<div class="glass" id="contact"><h2>Contact</h2><p>Email: youremail@example.com<br>GitHub: github.com/yourusername<br>LinkedIn: linkedin.com/in/yourprofile</p></div>
+<footer>© 2026 Rohit G • Content Writing Portfolio</footer></div></body></html>

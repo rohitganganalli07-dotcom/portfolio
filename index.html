@@ -1,53 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rohit G | Content Writing Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+            font-family:'Poppins',sans-serif;
+            background:#eef5ff;
+            color:#333;
+        }
+
+        /* HERO */
+
+        .hero{
+            height:100vh;
+            background:linear-gradient(135deg,#4f46e5,#3b82f6,#06b6d4);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+            padding:20px;
+        }
+
+        .hero-content h1{
+            font-size:60px;
+            margin-bottom:15px;
+        }
+
+        .hero-content p{
+            font-size:22px;
+            margin-bottom:35px;
+        }
+
+        .btn{
+            text-decoration:none;
+            background:white;
+            color:#2563eb;
+            padding:15px 35px;
+            border-radius:50px;
+            font-weight:600;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            background:#ffd54f;
+            color:#000;
+        }
+
+        section{
+            width:85%;
+            max-width:1100px;
+            margin:auto;
+            padding:80px 0;
+        }
+
+        section h2{
+            text-align:center;
+            font-size:40px;
+            color:#1e3a8a;
+            margin-bottom:40px;
+        }
+
+        .about p{
+            max-width:850px;
+            margin:auto;
+            text-align:center;
+            line-height:1.9;
+            font-size:18px;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+            gap:30px;
+        }
+
+        .card{
+            background:white;
+            border-radius:20px;
+            padding:35px;
+            box-shadow:0 15px 35px rgba(0,0,0,.1);
+            transition:.35s;
+            border-top:6px solid #2563eb;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+            box-shadow:0 20px 45px rgba(0,0,0,.18);
+        }
+
+        .card h3{
+            color:#2563eb;
+            margin-bottom:15px;
+        }
+
+        .card p{
+            line-height:1.8;
+            margin-bottom:25px;
+        }
+
+        .card a{
+            text-decoration:none;
+            color:white;
+            background:#2563eb;
+            padding:12px 24px;
+            border-radius:30px;
+            display:inline-block;
+            transition:.3s;
+        }
+
+        .card a:hover{
+            background:#1d4ed8;
+        }
+
+        footer{
+            background:#1e293b;
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
+
+        @media(max-width:768px){
+
+            .hero-content h1{
+                font-size:42px;
+            }
+
+            .hero-content p{
+                font-size:18px;
+            }
+
+            section h2{
+                font-size:32px;
+            }
+
+            .cards{
+                grid-template-columns:1fr;
+            }
+
+        }
+
+    </style>
+
 </head>
 
 <body>
 
-    <header>
-        <h1>Rohit G</h1>
-        <p>Content Writer | SEO Enthusiast | Research-Based Articles</p>
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <h1>✍️ Rohit G</h1>
+
+            <p>
+                Content Writer • SEO Enthusiast • Research-Based Articles
+            </p>
+
+            <a href="#articles" class="btn">
+                Explore My Articles
+            </a>
+
+        </div>
+
     </header>
 
-    <hr>
+    <section class="about">
 
-    <section>
         <h2>About Me</h2>
+
         <p>
-            Hi! I'm Rohit, an aspiring content writer passionate about creating
-            informative, engaging, and reader-friendly content. This portfolio
-            showcases some of my writing samples on technology, automobiles,
-            and career-related topics.
+            Welcome to my content writing portfolio! I am an aspiring content writer
+            passionate about creating informative, engaging, and reader-friendly
+            articles. I enjoy researching diverse topics and transforming complex
+            ideas into content that is easy to understand and enjoyable to read.
+            This portfolio highlights some of my work and reflects my writing,
+            research, and SEO skills.
         </p>
+
     </section>
 
-    <section>
-        <h2>Writing Samples</h2>
+    <section id="articles">
 
-        <ul>
-            <li>
-                <a href="e20-petrol.html">
-                    E20 Petrol: Impact on Everyday Life
-                </a>
-            </li>
+        <h2>📚 My Articles</h2>
 
-            <li>
-                <a href="earning-opportunities.html">
-                    Earning Opportunities in the New Era
-                </a>
-            </li>
-        </ul>
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>⛽ E20 Petrol: Impact on Everyday Life</h3>
+
+                <p>
+                    Explore how E20 petrol affects vehicle performance, mileage,
+                    maintenance costs, environmental sustainability, and the future
+                    of transportation in India.
+                </p>
+
+                <a href="e20-petrol.html">Read Article →</a>
+
+            </div>
+
+            <div class="card">
+
+                <h3>💼 Earning Opportunities in the New Era</h3>
+
+                <p>
+                    Discover modern income opportunities through freelancing,
+                    AI tools, content writing, digital marketing, and remote work.
+                </p>
+
+                <a href="earning-opportunities.html">Read Article →</a>
+
+            </div>
+
+        </div>
+
     </section>
-
-    <hr>
 
     <footer>
-        <p>© 2026 Rohit G | Content Writing Portfolio</p>
+
+        <p>
+            © 2026 Rohit G | Content Writing Portfolio
+        </p>
+
     </footer>
 
 </body>
+
 </html>

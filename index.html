@@ -1,32 +1,84 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Rohit G | Content Writing Portfolio</title>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rohit Ganganalli | Content Writer Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:Poppins,sans-serif;background:linear-gradient(135deg,#6a11cb,#2575fc,#00c9ff);background-size:300% 300%;animation:bg 12s ease infinite;color:#fff}
-@keyframes bg{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}
-nav{display:flex;justify-content:space-between;align-items:center;padding:18px 8%;position:sticky;top:0;background:rgba(0,0,0,.15);backdrop-filter:blur(10px)}
-nav a{color:#fff;text-decoration:none;margin-left:18px;font-weight:600}
-.hero{text-align:center;padding:80px 20px}.hero h1{font-size:60px}.hero p{max-width:760px;margin:18px auto;font-size:20px}
-.btn{display:inline-block;background:#fff;color:#2575fc;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:700}
-.container{max-width:1100px;margin:auto;padding:20px}.glass{background:rgba(255,255,255,.15);backdrop-filter:blur(12px);border-radius:20px;padding:30px;margin:30px 0}
-.skills{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}.skill{background:#ff6a00;padding:10px 18px;border-radius:25px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.card{background:rgba(255,255,255,.12);padding:24px;border-radius:18px;transition:.3s}.card:hover{transform:translateY(-10px) scale(1.03)}
-.card a{display:inline-block;margin-top:12px;background:#fff;color:#222;padding:10px 18px;border-radius:25px;text-decoration:none}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}.stat{text-align:center;background:rgba(255,255,255,.15);padding:20px;border-radius:16px}
-footer{text-align:center;padding:25px}
-</style></head><body>
-<nav><h2>✍️ Rohit G</h2><div><a href="#about">About</a><a href="#articles">Articles</a><a href="#contact">Contact</a></div></nav>
-<section class="hero"><h1>Helping Brands Turn Ideas Into Engaging, SEO‑Driven Content.</h1><p>Creative Content Writer • SEO Enthusiast • Research-Driven Storytelling</p><a class="btn" href="#articles">View Articles</a></section>
-<div class="container">
-<div class="glass" id="about"><h2>About Me</h2><p>Hello! I'm Rohit, an aspiring content writer passionate about creating engaging, informative, and SEO-friendly content that connects with readers and delivers value.</p></div>
-<div class="glass"><h2>Skills</h2><div class="skills"><span class="skill">SEO</span><span class="skill">Research</span><span class="skill">Blogs</span><span class="skill">AI Tools</span><span class="skill">Copywriting</span><span class="skill">Editing</span></div></div>
-<div class="glass" id="articles"><h2>Featured Articles</h2><div class="cards">
-<div class="card"><h3>⛽ E20 Petrol: Impact on Everyday Life</h3><p>Understand how E20 petrol affects mileage, maintenance and the future of mobility.</p><a href="e20-petrol.html">Read Article →</a></div>
-<div class="card"><h3>💰 Why Paid Internships Attract Better Talent</h3><p>Learn why competitive stipends are an investment that attracts better interns and builds a stronger employer brand.</p><a href="paid-internships.html">Read Article →</a></div>
-<div class="card"><h3>💼 Earning Opportunities in the New Era</h3><p>Explore freelancing, AI, digital marketing and remote work opportunities.</p><a href="earning-opportunities.html">Read Article →</a></div>
-</div></div>
-<div class="glass"><h2>Portfolio Stats</h2><div class="stats"><div class="stat"><h3>3+</h3><p>Published Articles</p></div><div class="stat"><h3>4000+</h3><p>Words Written</p></div><div class="stat"><h3>100%</h3><p>Original Work</p></div></div></div>
-<div class="glass" id="contact"><h2>Contact</h2><p>Email: youremail@example.com<br>GitHub: github.com/yourusername<br>LinkedIn: linkedin.com/in/yourprofile</p></div>
-<footer>© 2026 Rohit G • Content Writing Portfolio</footer></div></body></html>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Poppins,sans-serif;background:#08111f;color:#eef5ff}
+nav{position:sticky;top:0;background:rgba(8,17,31,.88);backdrop-filter:blur(10px);display:flex;justify-content:space-between;align-items:center;padding:18px 8%;border-bottom:1px solid #1e3352}
+nav a{color:#fff;text-decoration:none;margin-left:22px}
+.hero{min-height:88vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;background:radial-gradient(circle at top,#123b77,#08111f)}
+.hero h1{font-size:60px}.hero .accent{color:#59d8ff}
+.hero p{max-width:780px;margin:18px auto;color:#c9d9ef;font-size:20px}
+.btn{display:inline-block;margin:10px;padding:14px 28px;border-radius:30px;background:#29c3ff;color:#001826;text-decoration:none;font-weight:700}
+.btn.alt{background:transparent;color:#fff;border:1px solid #59d8ff}
+.wrap{max-width:1150px;margin:auto;padding:70px 22px}
+.panel{background:#0d1b2f;border:1px solid #203657;border-radius:20px;padding:30px;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.card{background:#12233c;border-radius:18px;overflow:hidden;transition:.3s}
+.card:hover{transform:translateY(-8px)}
+.thumb{height:150px;background:linear-gradient(135deg,#2563eb,#22d3ee)}
+.card .c{padding:20px}
+.badge{display:inline-block;background:#18385e;color:#86e6ff;padding:6px 12px;border-radius:20px;font-size:12px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;text-align:center}
+.stat{background:#12233c;padding:22px;border-radius:18px}
+footer{text-align:center;padding:30px;color:#99aac5}
+</style></head>
+<body>
+<nav><strong>Rohit Ganganalli</strong><div><a href="#about">About</a><a href="#articles">Articles</a><a href="#contact">Contact</a></div></nav>
+
+<section class="hero">
+<div>
+<h1>Words That <span class="accent">Inform</span>.<br>Stories That <span class="accent">Convert</span>.</h1>
+<p>Content Writer • SEO Enthusiast • Research-Driven Storytelling. I create reader-focused, well-researched content that helps brands educate, engage, and grow.</p>
+<a href="#articles" class="btn">View Articles</a>
+<a href="#contact" class="btn alt">Contact Me</a>
+</div>
+</section>
+
+<div class="wrap">
+<section id="about" class="panel">
+<h2>About Me</h2><br>
+<p>Hello! I'm <strong>Rohit Ganganalli</strong>, an aspiring content writer passionate about transforming complex ideas into engaging, easy-to-understand articles. I enjoy writing SEO-friendly blogs, business content, technology explainers, and research-driven pieces that provide real value to readers.</p>
+</section>
+
+<section class="panel">
+<h2>Why Hire Me?</h2><br>
+<div class="grid">
+<div>✔ SEO-friendly writing</div>
+<div>✔ Original & researched content</div>
+<div>✔ AI-assisted workflow with human editing</div>
+<div>✔ Clear, engaging storytelling</div>
+</div>
+</section>
+
+<section id="articles">
+<h2 style="margin-bottom:20px">Featured Articles</h2>
+<div class="grid">
+<div class="card"><div class="thumb"></div><div class="c"><span class="badge">Business • 6 min read</span><h3>Why Paid Internships Attract Better Talent</h3><p>How competitive stipends help companies attract skilled interns and build a stronger employer brand.</p><a class="btn" href="paid-internships.html">Read Article</a></div></div>
+<div class="card"><div class="thumb"></div><div class="c"><span class="badge">Automotive • 5 min read</span><h3>E20 Petrol: Impact on Everyday Life</h3><p>An informative guide explaining E20 fuel and its effects on daily commuters.</p><a class="btn" href="e20-petrol.html">Read Article</a></div></div>
+<div class="card"><div class="thumb"></div><div class="c"><span class="badge">Career • 5 min read</span><h3>Earning Opportunities in the New Era</h3><p>Exploring freelancing, AI, digital marketing and modern online careers.</p><a class="btn" href="earning-opportunities.html">Read Article</a></div></div>
+</div>
+</section>
+
+<section class="panel">
+<h2>Portfolio Statistics</h2><br>
+<div class="stats">
+<div class="stat"><h3>3+</h3><p>Published Articles</p></div>
+<div class="stat"><h3>4,000+</h3><p>Words Written</p></div>
+<div class="stat"><h3>100%</h3><p>Original Work</p></div>
+</div>
+</section>
+
+<section id="contact" class="panel">
+<h2>Contact</h2><br>
+<p>📧 rohitganganalli07@gmail.com</p>
+<p>💼 LinkedIn: https://www.linkedin.com/in/rohit-g-6b911a330/</p>
+<p>🐙 GitHub: https://github.com/rohitganganalli07-dotcom</p>
+</section>
+</div>
+<footer>© 2026 Rohit Ganganalli • Content Writing Portfolio</footer>
+</body></html>

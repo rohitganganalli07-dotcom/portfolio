@@ -1,246 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rohit G | Content Writing Portfolio</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <style>
-
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
-
-        html{
-            scroll-behavior:smooth;
-        }
-
-        body{
-            font-family:'Poppins',sans-serif;
-            background:#eef5ff;
-            color:#333;
-        }
-
-        /* HERO */
-
-        .hero{
-            height:100vh;
-            background:linear-gradient(135deg,#4f46e5,#3b82f6,#06b6d4);
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            text-align:center;
-            color:white;
-            padding:20px;
-        }
-
-        .hero-content h1{
-            font-size:60px;
-            margin-bottom:15px;
-        }
-
-        .hero-content p{
-            font-size:22px;
-            margin-bottom:35px;
-        }
-
-        .btn{
-            text-decoration:none;
-            background:white;
-            color:#2563eb;
-            padding:15px 35px;
-            border-radius:50px;
-            font-weight:600;
-            transition:.3s;
-        }
-
-        .btn:hover{
-            background:#ffd54f;
-            color:#000;
-        }
-
-        section{
-            width:85%;
-            max-width:1100px;
-            margin:auto;
-            padding:80px 0;
-        }
-
-        section h2{
-            text-align:center;
-            font-size:40px;
-            color:#1e3a8a;
-            margin-bottom:40px;
-        }
-
-        .about p{
-            max-width:850px;
-            margin:auto;
-            text-align:center;
-            line-height:1.9;
-            font-size:18px;
-        }
-
-        .cards{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-            gap:30px;
-        }
-
-        .card{
-            background:white;
-            border-radius:20px;
-            padding:35px;
-            box-shadow:0 15px 35px rgba(0,0,0,.1);
-            transition:.35s;
-            border-top:6px solid #2563eb;
-        }
-
-        .card:hover{
-            transform:translateY(-10px);
-            box-shadow:0 20px 45px rgba(0,0,0,.18);
-        }
-
-        .card h3{
-            color:#2563eb;
-            margin-bottom:15px;
-        }
-
-        .card p{
-            line-height:1.8;
-            margin-bottom:25px;
-        }
-
-        .card a{
-            text-decoration:none;
-            color:white;
-            background:#2563eb;
-            padding:12px 24px;
-            border-radius:30px;
-            display:inline-block;
-            transition:.3s;
-        }
-
-        .card a:hover{
-            background:#1d4ed8;
-        }
-
-        footer{
-            background:#1e293b;
-            color:white;
-            text-align:center;
-            padding:25px;
-        }
-
-        @media(max-width:768px){
-
-            .hero-content h1{
-                font-size:42px;
-            }
-
-            .hero-content p{
-                font-size:18px;
-            }
-
-            section h2{
-                font-size:32px;
-            }
-
-            .cards{
-                grid-template-columns:1fr;
-            }
-
-        }
-
-    </style>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Rohit G | Content Writing Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins,sans-serif;background:linear-gradient(135deg,#6a11cb,#2575fc,#00c9ff);background-size:300% 300%;animation:bg 12s ease infinite;color:#fff}
+@keyframes bg{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}
+body:before,body:after{content:"";position:fixed;border-radius:50%;filter:blur(40px);opacity:.35;z-index:-1}
+body:before{width:260px;height:260px;background:#ff4ecd;top:60px;left:40px}
+body:after{width:300px;height:300px;background:#00ffd5;bottom:60px;right:40px}
+.hero{text-align:center;padding:90px 20px}
+.hero h1{font-size:64px;background:linear-gradient(90deg,#fff,#ffe082,#ff80ab);-webkit-background-clip:text;color:transparent}
+.hero p{margin:20px auto;max-width:700px;font-size:20px}
+.btn{display:inline-block;margin:10px;padding:14px 28px;border-radius:30px;text-decoration:none;background:#fff;color:#2575fc;font-weight:700;transition:.3s}
+.btn:hover{transform:scale(1.08);box-shadow:0 0 20px #fff}
+.container{max-width:1100px;margin:auto;padding:20px}
+.glass{background:rgba(255,255,255,.15);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.25);border-radius:22px;padding:30px;margin:30px 0;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+h2{text-align:center;margin-bottom:20px}
+.skills{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.skill{padding:10px 18px;border-radius:30px;background:linear-gradient(45deg,#ff9800,#ff4081)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+.card{padding:25px;border-radius:20px;color:#fff;transition:.3s}
+.card:nth-child(1){background:linear-gradient(135deg,#ff6a00,#ee0979)}
+.card:nth-child(2){background:linear-gradient(135deg,#00c6ff,#0072ff)}
+.card:hover{transform:translateY(-10px) rotate(-1deg)}
+.card a{display:inline-block;margin-top:15px;padding:10px 18px;background:#fff;color:#111;text-decoration:none;border-radius:25px;font-weight:600}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;text-align:center}
+.stat{background:rgba(255,255,255,.15);padding:20px;border-radius:18px}
+footer{text-align:center;padding:30px}
+@media(max-width:700px){.hero h1{font-size:42px}.stats{grid-template-columns:1fr}}
+</style>
 </head>
-
 <body>
+<section class="hero">
+<h1>✍️ Rohit G</h1>
+<p>Creative Content Writer • SEO Enthusiast • Research-Driven Storytelling</p>
+<a href="#articles" class="btn">View Articles</a>
+</section>
 
-    <header class="hero">
+<div class="container">
+<div class="glass">
+<h2>👋 About Me</h2>
+<p>Hello! I'm Rohit, an aspiring content writer passionate about creating engaging, informative, and SEO-friendly articles. I enjoy turning complex ideas into simple, reader-focused content while continuously improving my writing and research skills.</p>
+</div>
 
-        <div class="hero-content">
+<div class="glass">
+<h2>🚀 Skills</h2>
+<div class="skills">
+<span class="skill">SEO Writing</span>
+<span class="skill">Research</span>
+<span class="skill">Blog Writing</span>
+<span class="skill">AI Tools</span>
+<span class="skill">Copywriting</span>
+<span class="skill">Editing</span>
+</div>
+</div>
 
-            <h1>✍️ Rohit G</h1>
+<div class="glass" id="articles">
+<h2>📚 Featured Articles</h2>
+<div class="cards">
+<div class="card">
+<h3>⛽ E20 Petrol: Impact on Everyday Life</h3>
+<p>Understand how E20 petrol affects mileage, maintenance, costs, and the future of mobility in India.</p>
+<a href="e20-petrol.html">Read Article →</a>
+</div>
+<div class="card">
+<h3>💼 Earning Opportunities in the New Era</h3>
+<p>Explore freelancing, AI, digital marketing, remote work, and modern online income opportunities.</p>
+<a href="earning-opportunities.html">Read Article →</a>
+</div>
+</div>
+</div>
 
-            <p>
-                Content Writer • SEO Enthusiast • Research-Based Articles
-            </p>
+<div class="glass">
+<h2>📊 Portfolio Stats</h2>
+<div class="stats">
+<div class="stat"><h3>2+</h3><p>Articles</p></div>
+<div class="stat"><h3>3000+</h3><p>Words Written</p></div>
+<div class="stat"><h3>100%</h3><p>Original Work</p></div>
+</div>
+</div>
 
-            <a href="#articles" class="btn">
-                Explore My Articles
-            </a>
-
-        </div>
-
-    </header>
-
-    <section class="about">
-
-        <h2>About Me</h2>
-
-        <p>
-            Welcome to my content writing portfolio! I am an aspiring content writer
-            passionate about creating informative, engaging, and reader-friendly
-            articles. I enjoy researching diverse topics and transforming complex
-            ideas into content that is easy to understand and enjoyable to read.
-            This portfolio highlights some of my work and reflects my writing,
-            research, and SEO skills.
-        </p>
-
-    </section>
-
-    <section id="articles">
-
-        <h2>📚 My Articles</h2>
-
-        <div class="cards">
-
-            <div class="card">
-
-                <h3>⛽ E20 Petrol: Impact on Everyday Life</h3>
-
-                <p>
-                    Explore how E20 petrol affects vehicle performance, mileage,
-                    maintenance costs, environmental sustainability, and the future
-                    of transportation in India.
-                </p>
-
-                <a href="e20-petrol.html">Read Article →</a>
-
-            </div>
-
-            <div class="card">
-
-                <h3>💼 Earning Opportunities in the New Era</h3>
-
-                <p>
-                    Discover modern income opportunities through freelancing,
-                    AI tools, content writing, digital marketing, and remote work.
-                </p>
-
-                <a href="earning-opportunities.html">Read Article →</a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <footer>
-
-        <p>
-            © 2026 Rohit G | Content Writing Portfolio
-        </p>
-
-    </footer>
-
+<footer>© 2026 Rohit G • Content Writing Portfolio</footer>
+</div>
 </body>
-
 </html>
